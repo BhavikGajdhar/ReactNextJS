@@ -1,18 +1,17 @@
-import React from 'react';
+import React from "react";
+import Link from "next/link";
 
-
-const EmployeeListPresentation = (props:any) => {
-
+const EmployeeListPresentation = (props: any) => {
   const navigateBack = () => {
     props.navigate();
   };
   return (
     <div>
-      {/* <NavLink to="/add">
-        <button type="button" onClick={() => navigateBack()}>
-          Add
-        </button>
-      </NavLink> */}
+      <div className="App">
+      <Link href="employeeForm">
+        <button type="button">Add</button>
+      </Link>
+      </div>
       <table>
         <thead>
           <tr>
@@ -26,7 +25,7 @@ const EmployeeListPresentation = (props:any) => {
         </thead>
         <tbody>
           {props.initialValue &&
-            props.initialValue.map((user:any, i:number) => {
+            props.initialValue.map((user: any, i: number) => {
               return (
                 <tr key={i}>
                   <td>{user.id}</td>
@@ -37,9 +36,9 @@ const EmployeeListPresentation = (props:any) => {
                   <td>{user.email}</td>
                   <td>{user.phone}</td>
                   <td>
-                    {/* <NavLink to={`/edit/${user.id}`}>
+                    <Link href={`employeeForm/${user.id}`}>
                       <button>Edit</button>
-                    </NavLink> */}
+                    </Link>
                     <button
                       className="delete"
                       type="button"
@@ -54,7 +53,7 @@ const EmployeeListPresentation = (props:any) => {
         </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
 
-export default EmployeeListPresentation
+export default EmployeeListPresentation;
