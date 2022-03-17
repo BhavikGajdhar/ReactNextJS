@@ -5,7 +5,7 @@ import EmployeeFormContainer from './employeeFormContainer/EmployeeFormContainer
 const index = () => {
   return (
     <div>
-            <EmployeeFormContainer/>
+        <EmployeeFormContainer/>
     </div>
   )
 }

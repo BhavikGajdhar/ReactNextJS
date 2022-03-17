@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { getByIdEmployeeData } from "../Middleware/employeeMiddleware";
-import EmployeeFormContainer from "./employeeFormContainer/EmployeeFormContainer";
+import { getByIdEmployeeData } from "../../Middleware/employeeMiddleware";
+import EmployeeFormContainer from "../employeeFormContainer/EmployeeFormContainer";
 
 const id = (props:any) => {
     const router = useRouter();

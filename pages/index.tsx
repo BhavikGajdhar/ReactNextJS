@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
-const index = () => {
+const index = (props: any) => {
   return (
-    <>Hello</>
-  )
-}
+    <div className="App">
+      <h3>HEllo World</h3>
+      <Link href="employee/employeeList">
+        <button type="button">EmployeeList</button>
+      </Link>
+    </div>
+  );
+};
 
-export default index
+export default index;

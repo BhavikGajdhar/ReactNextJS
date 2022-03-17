@@ -47,6 +47,14 @@
       "email": "m@gmail.com",
       "phone": "7896541230",
       "id": 6
+    },
+    {
+      "firstName": "Pratik",
+      "lastName": "Tandel",
+      "username": "Pratik",
+      "email": "p@gmail.com",
+      "phone": "7896541230",
+      "id": 7
     }
   ]
 }

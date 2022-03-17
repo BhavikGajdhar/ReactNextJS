@@ -2,13 +2,11 @@ import React from "react";
 import Link from "next/link";
 
 const EmployeeListPresentation = (props: any) => {
-  const navigateBack = () => {
-    props.navigate();
-  };
+ 
   return (
     <div>
       <div className="App">
-      <Link href="employeeForm">
+      <Link href="employeeForm/add">
         <button type="button">Add</button>
       </Link>
       </div>
@@ -36,7 +34,7 @@ const EmployeeListPresentation = (props: any) => {
                   <td>{user.email}</td>
                   <td>{user.phone}</td>
                   <td>
-                    <Link href={`employeeForm/${user.id}`}>
+                    <Link href={`employeeForm/edit/${user.id}`}>
                       <button>Edit</button>
                     </Link>
                     <button
